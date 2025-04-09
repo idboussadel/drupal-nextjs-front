@@ -7,10 +7,10 @@ import "@/styles/globals.css"
 
 export const metadata: Metadata = {
   title: {
-    default: "Next.js for Drupal",
-    template: "%s | Next.js for Drupal",
+    default: "HashNode",
+    template: "%s | Tech",
   },
-  description: "A Next.js site powered by a Drupal backend.",
+  description: "Stay Ahead in Tech.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -27,9 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <DraftAlert />
-        <div className="max-w-screen-md px-6 mx-auto">
+        <div>
           <HeaderNav />
-          <main className="container py-10 mx-auto">{children}</main>
+          <main>{children}</main>
         </div>
       </body>
     </html>
